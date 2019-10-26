@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import rospy, time
 from std_msgs.msg import Int32MultiArray
 
@@ -36,7 +38,7 @@ def forward():
 
 def backward():
     global flag
-    if data[5] <= 60:
+    if usonic_data[5] <= 60:
         drive(90,90)
         flag = True
     else:
