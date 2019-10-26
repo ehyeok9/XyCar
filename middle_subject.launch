@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="xycar_b2" type="xycar_b2_motor.py" name="xycar_B2_motor"/>
+    <node pkg="motor_pub" type="sample.py" name="sample"/>
+    <node pkg="ultrasonic" type="ultra_sonic_publish.py" name="ultra_sonic_pub"/>
+</launch>
+
