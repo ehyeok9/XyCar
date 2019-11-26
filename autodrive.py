@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# https://github.com/HyOsori/Osori-SelfDrivingWithGTA5/wiki/%EA%B0%95%EC%A2%8C-7----OpenCV%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9E%90%EC%9C%A8-%EC%A3%BC%ED%96%89-%EC%86%8C%EA%B0%9C
+
 import rospy
 import time
 import numpy as np
