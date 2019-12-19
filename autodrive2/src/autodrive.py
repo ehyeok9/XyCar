@@ -18,11 +18,11 @@ class AutoDrive:
 	self.angle = 0
 	self.speed = 0
     def trace(self):
-	#redSignal = self.line_detector.trafficLight()
-	#print(redSignal)
-	#if redSignal:
-	    #print(redSignal)
-	 #   self.forward()
+	redSignal = self.line_detector.trafficLight()
+	print(redSignal)
+	if redSignal:
+	    print(redSignal)
+	    self.forward()
 	r,p,y = self.imu.get_data()
         obs_l, obs_m, obs_r, obs_sl, obs_sr, B = self.obstacle_detector.get_distance()
         line_l,line_r = self.line_detector.detect_lines()
@@ -59,9 +59,7 @@ class AutoDrive:
 
 
     def accelerate(self, angle, left, mid, right, p, side_left, side_right, B):
-	print(B)
-	if B < 40 and B!=-1 and B!=0:
-	    self.forward()
+	
 	if mid < 40 and side_left < 40 and side_right < 40:
             self.backward()
 
